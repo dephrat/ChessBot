@@ -1,4 +1,4 @@
-#include "graphicsdisplay.h"
+/*#include "graphicsdisplay.h"
 
 GraphicsDisplay::GraphicsDisplay (int n, int size): n{n}, size{size} {
     w.fillRectangle(0, 0, size, size, Xwindow::White);
@@ -53,3 +53,4 @@ void GraphicsDisplay::notify(std::vector<std::vector<std::shared_ptr<Piece> > > 
         }
  }
 }
+*/

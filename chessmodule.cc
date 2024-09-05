@@ -442,10 +442,12 @@ void ChessModule::init(string white_player, string black_player) {
     whose_move = false;
     shared_ptr<TextDisplay> temp = make_shared<TextDisplay>(8);
     attach(temp);
+    /*
     if (graphics_display_on) {
         shared_ptr<GraphicsDisplay> tempp = make_shared<GraphicsDisplay>(8, 500);
         attach(tempp);
     }
+    */
     if (white_player != "human" && white_player != "multiplayer") {
         if (white_player == "computer1") {
             shared_ptr<Level1> compw = make_shared<Level1>(this);
@@ -624,10 +626,12 @@ void ChessModule::setup(char symbol, char piece, string pos, string colour) {
         whose_move = false;
         shared_ptr<TextDisplay> temp = make_shared<TextDisplay>(8);
         attach(temp);
+        /*
         if (graphics_display_on) {
             shared_ptr<GraphicsDisplay> tempp = make_shared<GraphicsDisplay>(8, 500);
             attach(tempp);
         }
+        */
         setup_mode_on = true;
     }
     notifyObservers();

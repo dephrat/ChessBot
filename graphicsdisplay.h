@@ -1,4 +1,4 @@
-#ifndef GRAPHICSDISPLAY_H
+/*#ifndef GRAPHICSDISPLAY_H
 #define GRAPHICSDISPLAY_H
 #include <iostream>
 #include <vector>
@@ -7,7 +7,7 @@
 #include <string>
 
 class GraphicsDisplay : public Observer  {
-    Xwindow w;
+    //Xwindow w;
     // n should be 8
     int n;
     const int size;
@@ -19,3 +19,4 @@ public:
 
 };
 #endif
+*/
