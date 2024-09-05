@@ -1,0 +1,45 @@
+==================================================
+CS246 Chess Project
+Created by Daniel Ephrat, Diana Chung, Hugh Chung.
+Version 1.0
+==================================================
+
+List of commands:
+
+    game white-player black-player
+        Starts a new game. The parameters white-player and black-player can be:
+
+        Parameters:
+        [human, human]  - Two players game.
+        [multiplayer, multiplayer] - Two players can play via LAN. Use (curl ifconfig.me) to obtain your IPv4 address.
+        [human, computer1/computer2/computer3/computer4] - Player vs Computer, 1-4 represents diffculty.
+        
+    move pos1 pos2
+        Move a piece from pos1 to pos2.
+
+    resign
+        Concedes the game to your opponent.
+
+    load
+        Plays the game specified in savelog.txt until end of file.
+        User can continue playing once loading is finished.
+        Savelog.txt is constructed automatically from any local human vs. human game.
+
+    setup
+        enter setup mode. You can set up your own initial board configurations.
+
+        Commands under setup mode:
+        + piece_type pos
+            Places the piece_type on pos. 
+        
+        - pos
+            Removes the piece on pos.
+        
+        = colour
+            Makes it colour's turn to go next
+        
+        done
+            Leaves setup mode.
+    
+    quit
+        Exit the program.
